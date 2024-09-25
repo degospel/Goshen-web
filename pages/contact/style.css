@@ -1,0 +1,228 @@
+@import url("./font/stylesheet.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Neulis Alt' !important;
+    background: #242424 !important;
+    color: #fff !important;
+}
+
+.section-header {
+    /* font-family: Neulis Alt; */
+    font-size: 69.56px;
+    font-weight: 500;
+    line-height: 70.5px;
+    /* text-align: left; */
+}
+
+.section-main-header {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 70.5px;
+    background: linear-gradient(91.25deg, #026F7E -5.44%, #0DFD7E 164.59%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title-header {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45.5px;
+    background: linear-gradient(91.25deg, #026F7E -5.44%, #0DFD7E 164.59%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: .75rem;
+}
+
+.hero-btn {
+    background: linear-gradient(90deg, hsla(187, 97%, 25%, 1) 0%, hsla(148, 98%, 52%, 1) 100%);
+    padding: 15px 40px;
+    text-decoration: none;
+    color: #fff;
+    /* border: 1px solid #0DFD7E; */
+}
+
+/* Navbar */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darker on scroll */
+}
+
+.navbar {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    padding: 20px 20px !important;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* background-color: rgba(0, 0, 0, 0.4) !important; */
+    /* Transparent background */
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.navbar .logo {
+    /* height: 40px; */
+    cursor: pointer;
+}
+
+.navbar .logo img {
+    height: 100% !important;
+    /* width: 30px; */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #0DFD7E;
+}
+
+.navbar ul li #join-btn {
+    color: #0DFD7E;
+    padding: 10px 40px;
+    border: 1px solid #0DFD7E;
+}
+
+.navbar ul li #join-btn:hover {
+    background: linear-gradient(90deg, hsla(187, 97%, 25%, 1) 0%, hsla(148, 98%, 52%, 1) 100%);
+    color: #fff;
+}
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact-body{
+    height: 100%;
+    width: 100%;
+    z-index: 3 !important;
+    padding-top: 8rem;
+    position: relative;
+}
+
+.contact-content p{
+    /* width: 70% !important; */
+    z-index: 300 !important;
+}
+
+.contact-form form{
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    /* backdrop-filter: blur(1.4px); */
+    /* -webkit-backdrop-filter: blur(1.4px); */
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding: 2rem 3.5rem;
+}
+
+.contact-form form .form-control{
+    background: transparent;
+    color: #fff;
+    border-radius: 0;
+    border-color: #ffffff1f !important;
+    /* opacity: 20%; */
+    /* background: #2C2C2C1F; */
+}
+
+.contact-form form .form-control:focus{
+    box-shadow: none !important;
+}
+
+.contact-form form .form-label{
+    color: #fff;
+    opacity: 40%;
+}
+
+.contact-form form textarea::placeholder{
+    color: #fff;
+    opacity: 20%;
+}
+
+.form-btn{
+    width: 100% !important;
+    /* margin: auto auto; */
+    margin: 2rem 1rem;
+    padding: .50rem 3.5rem;
+}
+
+.form-btn .btn{
+    color: #fff;
+    background: linear-gradient(90deg, #026F7E -21.3%, #0DFD7E 355.32%) !important;
+    padding: .75rem 0;
+    border-radius: 0;
+}
+
+.top-ellipse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.down-ellipse {
+    position: absolute;
+    left: -10px;
+    top: 200px !important;
+    z-index: 1;
+}
+
+
+/* Footer */
+.footer {
+    background: #312F2F;
+}
+
+.socials-body {
+    background: #026F7E;
+    height: 54px;
+    width: 54px;
+    color: #0DFD7E;
+    padding: .75rem;
+    align-items: center;
+    border-radius: 100%;
+    margin-right: .80rem;
+}
+
+.socials-body i {
+    font-size: 20px;
+}
+
+@media (max-width: 468px) {
+    .footer-text {
+        display: block !important;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    .footer-text .spa {
+        margin-top: .50rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .down-ellipse img {
+        width: 100% !important;
+    }
+}

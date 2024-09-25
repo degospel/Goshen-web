@@ -1,0 +1,332 @@
+@import url("./font/stylesheet.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Neulis Alt' !important;
+    background: #242424 !important;
+    color: #fff !important;
+}
+
+.section-header {
+    /* font-family: Neulis Alt; */
+    font-size: 69.56px;
+    font-weight: 500;
+    line-height: 70.5px;
+    /* text-align: left; */
+}
+
+.section-main-header {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 70.5px;
+    background: linear-gradient(91.25deg, #026F7E -5.44%, #0DFD7E 164.59%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title-header {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45.5px;
+    background: linear-gradient(91.25deg, #026F7E -5.44%, #0DFD7E 164.59%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: .75rem;
+}
+
+.hero-btn {
+    background: linear-gradient(90deg, hsla(187, 97%, 25%, 1) 0%, hsla(148, 98%, 52%, 1) 100%);
+    padding: 15px 40px;
+    text-decoration: none;
+    color: #fff;
+    /* border: 1px solid #0DFD7E; */
+}
+
+.top-ellipse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.down-ellipse {
+    position: absolute;
+    left: -10px;
+    top: 200px !important;
+    z-index: 1;
+}
+
+/* Navbar */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darker on scroll */
+}
+
+.navbar {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    padding: 20px 20px !important;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* background-color: rgba(0, 0, 0, 0.4) !important; */
+    /* Transparent background */
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.navbar .logo {
+    /* height: 40px; */
+    cursor: pointer;
+}
+
+.navbar .logo img {
+    height: 100% !important;
+    /* width: 30px; */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #0DFD7E;
+}
+
+.navbar ul li #join-btn {
+    color: #0DFD7E;
+    padding: 10px 40px;
+    border: 1px solid #0DFD7E;
+}
+
+.navbar ul li #join-btn:hover {
+    background: linear-gradient(90deg, hsla(187, 97%, 25%, 1) 0%, hsla(148, 98%, 52%, 1) 100%);
+    color: #fff;
+}
+
+/* Job Hero */
+.job-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+.job-body {
+    height: 100%;
+    width: 100%;
+    z-index: 3 !important;
+    /* padding-top: 8rem; */
+    position: relative;
+}
+
+.job-content{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.job-hero-text{
+    width: 360px;
+    height: 121px;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+}
+
+.hero-text{
+    font-size: 36px !important;
+}
+
+.job-hero-img{
+    /* height: 300px; */
+        width: 400px;
+}
+
+.job-img1{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.job-img1 img,
+.job-img2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.job-img2{
+    position: absolute;
+    left: 35%;
+    top: 45%;
+    transform: translate(10%, 10%);
+}
+
+.job-content p {
+    /* width: 70% !important; */
+    z-index: 300 !important;
+}
+
+@media (max-width: 800px) {
+    .job-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+    }
+
+    .job-body {
+        height: 100%;
+        width: 100%;
+        z-index: 3 !important;
+        /* padding-top: 8rem; */
+        position: relative;
+    }
+
+    .job-content {
+        position: static !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+        /* gap: 0px 16px; */
+        justify-content: center !important;
+        justify-items: center !important;
+        align-items: center !important;
+        height: 100%;
+        width: 100%;
+    }
+
+    .job-hero-text {
+        position: static !important;
+        width: 100% !important;
+        height: 100% !important;
+        text-align: center !important;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+    }
+
+    .job-hero-img {
+        /* height: 300px; */
+        width: 300px !important;
+    }
+
+    .job-img2 {
+        position: static !important;
+        display: none !important;
+    }
+
+    .job-img1 {
+        position: static !important;
+    }
+
+    .hero-text {
+        font-size: 36px !important;
+    }
+}
+
+.point-card{
+    /* background: none !important; */
+    /* height: 100% !important; */
+    padding: 1rem 2rem !important;
+    /* margin: 0 .20rem !important; */
+    background: #026F7E2E !important;
+    height: 100% !important;
+    color: #fff !important;
+}
+
+.point-col{
+    padding: 1rem 2rem !important;
+    /* margin: 0 .20rem !important; */
+    background: #026F7E2E !important;
+    height: 100% !important;
+    color: #fff !important;
+}
+
+.point-col i{
+    color: #0DFD7E !important;
+}
+
+/* .point-col p {
+    font-size: 22px;
+} */
+
+/* Footer */
+.footer {
+    background: #312F2F;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-body {
+    background: #026F7E;
+    height: 54px;
+    width: 54px;
+    color: #0DFD7E;
+    padding: .75rem;
+    align-items: center;
+    border-radius: 100%;
+    margin-right: .80rem;
+}
+
+.socials-body i {
+    font-size: 20px;
+}
+
+
+@media (max-width: 468px) {
+    .footer-text {
+        display: block !important;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    .footer-text .spa {
+        margin-top: .50rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-main-header {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .section-title-header {
+        font-size: 30px !important;
+        line-height: 30px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    li {
+        font-size: 16px !important;
+    }
+
+    .down-ellipse img {
+        width: 100% !important;
+    }
+}
